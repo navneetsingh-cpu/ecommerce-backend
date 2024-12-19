@@ -72,6 +72,7 @@ public class Order {
     @JoinColumn(name = "shipping_address_id", referencedColumnName = "id")
     private Address shippingAddress;
 
+
     // One-to-One relationship with Address for billing address
     // - CascadeType.ALL ensures cascading operations
     // - JoinColumn specifies the foreign key column "billing_address_id"
